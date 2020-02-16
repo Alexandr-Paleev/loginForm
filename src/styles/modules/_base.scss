@@ -1,0 +1,126 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  color: $primary-color;
+  font-family: $primary-font;
+  background: $main-background;
+}
+
+.center {
+  text-align: center;
+  background: $activ_icons-button;
+  cursor: pointer;
+}
+
+a {
+  color: $background-2;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.container {
+  width: 450px;
+  height: 400px;
+  background-color: rgba(0, 0, 153, 0.7);
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 -5px 0 blue;
+  border-radius: 0 0 10px 10px;
+}
+
+.headForm {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 20px;
+  outline: none;
+}
+
+input {
+  &[type="text"], &[type="password"] {
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 0 30px 0 10px;
+    position: relative;
+    outline: none;
+  }
+
+  &[type="text"]+img {
+    position: absolute;
+    font-size: 30px;
+    margin: 15px 0 auto -30px;
+  }
+
+  &[type="password"]+img {
+    position: absolute;
+    font-size: 30px;
+    margin: 15px 0 auto -30px;
+    color: black;
+  }
+
+  &[type="button"] {
+    width: 250px;
+    height: 35px;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #2ca8c6;
+    border: none;
+    border-bottom: 5px solid blue;
+    cursor: pointer;
+  }
+
+  &[type="button"]:hover {
+    transition: all 0.5s;
+    background: lightgreen;
+    color: #2c536c;
+  }
+}
+
+.night {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50vw;
+  height: 50vh;
+  background: black;
+  z-index: 1000;
+}
+
+.wrapp__inputSvg {
+  justify-items: center;
+  width: 80%;
+}
+
+.inputSvg {
+  width: 100%;
+}
+
+svg {
+  position: absolute;
+  font-size: 30px;
+  margin: 15px 0 auto -30px;
+  color: black;
+}
+
+.ok {
+  width: 20%;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+}
